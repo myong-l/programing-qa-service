@@ -1,0 +1,17 @@
+<p id="notice"><%= notice %></p>
+
+<h1>プログラミング初心者Q&Aサービスサイト</h1>
+<% @questions.each do |question| %>
+
+  <div class="panel panel-primary">
+    <div class="panel-heading">
+      <a href="<%= question_path(question) %>"><h3 class="panel-title"><%= question.title %></h3></a>
+    </div>
+    <div class="panel-body">
+      <%= question.body %>
+    </div>
+  </div>
+<% end %>
+<br>
+
+<%= link_to 'New Question', new_question_path %>

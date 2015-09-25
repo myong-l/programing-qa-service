@@ -1,0 +1,18 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "questions";
+@import "scaffolds";
+@import "bootstrap-material-design";
+$white :#ffffff;
+#wrap {
+  margin:0 auto;
+  width:1200px;
+}
+.panel-heading a {
+  color:$white;
+}
+@media (max-width: 1199px) {
+  #wrap {
+    width:auto;
+  }
+}
